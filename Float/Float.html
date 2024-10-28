@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" hreflang="style.css">
+</head>
+<body>
+<header>
+    <h2>Los Elementos FLotantes</h2>
+</header>
+<main>
+    <div>
+        <h3>Float</h3>
+        <p>Es una etiqueta de CSS que permite ubicar y mover un elemento en torno a un texto. Interviene en el flujo normal del texto y se integra en él según el valor que se le dé. Este elemento se llama elemento flotante y dependiendo del valor otorgado modifica el display.</p>
+        <ul>
+            <li>Block: inline, inline-block, inline-table, inline-row, inline-row-group, table-column, table-column-group, table-cell, table-caption, table-header-group, table-footer-group.</li>
+            <li>Flex: inline-flex.</li>
+            <li>Grid:  inline-grid.</li>
+        </ul>
+        <p>Su sintaxis es sencilla, va en la parte de CSS, tanto en el archivo Style, como dentro de la etiqueta.</p>
+        <p>Sería tal que así:</p>
+        <p>Aaaaa{ float: right; }</p>
+        <ul>Sus valores posibles son: 
+            <li>Left: El elemento debe flotar a la izquierda de su bloque contenedor.</li>
+            <li>Right: El elemento debe flotar a la derecha de su bloque contenedor.</li>
+            <li>Inline-start: El elemento debe flotar en el costado de inicio de su bloque contenedor.</li>
+            <li>Inline-end: El elemento debe flotar en el costado de término de su bloque contenedor.</li>
+            <li>None: El elemento no deberá flotar. Siendo este último el default.</li>
+        </ul>
+        <ul>Sus valores globales son:
+            <li>Inherit:</li>
+            <li>Initial:</li>
+            <li>Unset:</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Clear</h3>
+        <p>Es una etiqueta de CSS que especifica si un elemento puede estar al lado de elementos flotantes o debe ser movido debajo de ellos.</p>
+        <p>Sería tal que así:</p>
+        <p>Aaaaa{ clear: right; }</p>
+        <ul>Sus valores posibles son:
+            <li>Right: El elemento es movido hacia abajo para limpiar elementos flotantes a la derecha.</li>
+            <li>Left: El elemento es movido hacia abajo para limpiar elementos flotantes a la izquierda.</li>
+            <li>Both: el elemento es movido hacia abajo para limpiar tanto elementos flotantes de la izquierda como de la derecha.</li>
+            <li>Inline-start: El elemento es movido hacia abajo para limpiar elementos flotantes al inicio del bloque contenedor.</li>
+            <li>Inline-end: El elemento es movido hacia abajo para limpiar floats al final del bloque contenedor.</li>
+            <li>None: El elemento no es movido hacia abajo para limpiar elementos flotantes anteriores. Siendo este último el default.</li>
+        </ul>
+        <p>Sería tal que así:</p>
+        <p>Aaaaa{ float: right; }</p>
+        <ul>Sus valores posibles son: 
+            <li>Visible: El contenido no es recortado.</li>
+            <li>Hidden: El contenido es recortado y no se muestran barras de posición.</li>
+            <li>Scroll: El contenido es recortado y el navegador web usa las barras de desplazamiento.</li>
+            <li>Auto: Depende del agente de usuario. Navegadores de escritorio como Firefox proveen barras de desplazamiento si hay contenido excedente.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Overflow</h3>
+        <p>Es una etiqueta de CSS que especifica si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.</p>
+        <p>Su sintaxis es sencilla, va en la parte de CSS, tanto en el archivo Style, como dentro de la etiqueta.</p>
+        <p>Sería tal que así:</p>
+        <p>Aaaaa{ Overflow: visible; }</p>
+        <ul>Sus valores posibles son:
+            <li>Visible: El contenido no es recortado.</li>
+            <li>Hidden: El contenido es recortado y no se muestran barras de posición.</li>
+            <li>Scroll: El contenido es recortado y el navegador web usa las barras de desplazamiento.</li>
+            <li>Auto: Depende del agente de usuario. Navegadores de escritorio como Firefox proveen barras de desplazamiento si hay contenido excedente.</li>
+        </ul>
+    </div>            
+    </main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
