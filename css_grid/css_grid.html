@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos HTML y CSS</title>
+    <link rel="stylesheet" href="/style.css">
+<!-- <link rel="stylesheet" href="style_box_model.css"> -->
+</head>
+<style>
+.sub  {
+    background-color: rgb(184, 255, 91);
+    padding: 10px 0 10px 0;
+    color: white;
+    text-align: center;
+    }
+.ejemplo1 {
+
+    background-color: pink;
+    width: 30rem;
+    border: 2rem solid blue;
+    padding: 4rem;
+    margin: 3rem;
+    height: 6rem;
+    }
+
+    .codigo   {
+
+        display: flex;
+        justify-content: center;
+     
+    }
+
+    .codigo div {
+        width: 20rem;
+    }
+    p{
+
+                width: 80%;
+                margin-top: 2rem;
+                margin-bottom: 2rem;;
+    }
+
+.lista {
+
+list-style: none;
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+line-height: 3rem;
+margin-left: 3rem;
+
+}
+
+.enumeradas {
+
+    list-style: none;
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+line-height: 1.5rem;
+margin-left: 1.5rem;
+
+}
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+	'header header header header header header'
+	'menu main main main right right'
+	'menu footer footer footer footer footer';
+  gap: 1rem;
+  background-color: #341150;
+  padding: 0.5rem;
+}
+
+.grid-container > div {
+  background-color: rgba(243, 221, 252, 0.8);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.propiedades {
+  
+    margin-left: 1.5rem;
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2rem;
+    margin-left: 1.5rem;
+
+}
+
+
+main {
+   padding-left:  4rem;
+   padding-right: 4rem;
+   padding-bottom: 4rem;
+    
+}
+
+.display {
+
+    background-color: rgba(247, 172, 201, 0.527);
+    padding-left: 1rem;
+}
+
+
+
+
+
+
+</style>
+
+
+<body>
+    <header class="ulSection1">
+        <h1>Recursos HTML y CSS</h1>
+           <img src="/Imagenes/logo/logo.png" alt="Team_Image">
+   </header>
+   <nav>
+       <ul class="ul1">
+           <li class="menu"><a href="/index.html">Inicio</a></li>
+           <li class="menu"><a href="/box_model/box_model.html">CSS Box Model</a></li>
+           <li class="menu"><a href="css_grid.html">CSS GRID</a></li>
+           <li class="menu"><a href="">Etiquetas</a></li>
+           <li class="menu"><a href="/Float/Float.html">Float</a></li>
+           <li class="menu"><a href="/SEO/SEO.html">SEO</a></li>
+       </ul>
+   </nav>
+   <h2 class="sub">CSS Grid Layout</h2>
+
+    <main>       
+
+<content>  
+<p>
+    El módulo de CSS Grid Layout ofrece un sistema basado en grillas con filas y columnas. Es una alternativa más sencilla a la utilización de floats y positioning. 
+</p>   
+    
+<p> 
+    Permite crear una grilla dividiendo un contenedor en diferentes áreas.
+</p>
+
+<p> 
+    Ejemplo:
+</p>
+
+<div class="grid-container">
+    <div class="item1">Header</div>
+    <div class="item2">Menu</div>
+    <div class="item3">Main</div>  
+    <div class="item4">Right</div>
+    <div class="item5">Footer</div>
+  </div>
+
+  <p>Código:</p>
+
+  <img src="img/3.png" alt="Código CSS Grid">
+
+  
+<p>El Grid Layout se construye a partir de un elemento parent con uno o más elementos child.</p>
+
+    <p> Ejemplo:</p>
+
+    <div class="grid-container2">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+      </div>
+      
+      <p>Código:</p>
+
+
+      <img src="img/5_codigo_css" alt="Código CSS Grid" >
+      <img src="img/4_codigo_html" alt="Código HTML Grid" >
+     
+
+      <div class="display">  
+     <p class="destacado"><b>Display</b>: un elemento HTML se convierte en un contenedor de rejilla (grid container) cuando la propiedad display se configura como grid o inline-grid.</p> 
+    </div>
+
+      <img src="img/6_display_grid" alt="codigo_display_grid">
+      <img src="img/7_inline" alt="codigo_display_inline_grid">
+
+ 
+    <h4>Propiedades CSS de Grid Layout</h4>
+    <br>
+
+    <ul class="propiedades">
+        <li><b>column-gap</b> - Especifica el gap entre columnas </li>
+        <li><b>gap</b> - Shorthand para las propiedades row-gap y column-gap</li>
+        <li><b>grid</b> - Shorthand para las propiedades  grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns y grid-auto-flow. </li>
+        <li><b>grid-area</b> - Se puede especificar los nombres de los elementos de la grilla o utilizar como shorthand para grid-row-start, grid-column-start, grid-row-end y grid-column-end. </li>
+        <li><b>grid-auto-columns</b> - Especifica un tamaño de columna por defecto.</li>
+        <li><b>grid-auto-flow</b> - Especifica como los elementos auto-ubicados se insertan en la grilla. </li>
+        <li><b>grid-auto-rows</b> - Especifica un tamaño de fila por defecto.</li>
+        <li><b>grid-column</b> - Shorthand para las propiedades grid-column-start y the grid-column-end.</li>
+        <li><b>grid-column-end</b> - Especifica dónde termina el elemento de la grilla.  </li>
+        <li><b>grid-column-gap</b> - Tamaño del gap entre columnas.</li>
+        <li><b>grid-column-start</b> - Comienzo del item de la grilla.</li>
+        <li><b>grid-gap</b> - Shorthand para las propiedades grid-row-gap y grid-column-gap.</li>
+        <li><b>grid-row</b> - Shorthand para las propiedades grid-row-start y grid-row-end. </li>
+        <li><b>grid-row-end</b> - Especifica dónde termina el item rejilla.</li>
+        <li><b>grid-row-gap</b> - Tamaño del gap entre filas.</li>
+        <li><b>grid-row-start</b> - Especifica dónde empieza el item rejilla.</li>
+        <li><b>grid-template</b> - Shorthand para las propiedades grid-template-rows, grid-template-columns y grid-areas.</li>
+        <li><b>grid-template-areas</b> - Especifica cómo mostrar columnas y filas usando nombres de los elementos de la rejilla.</li>
+        <li><b>grid-template-columns</b> - Especifica el tamaño de las columnas y la cantidad de columnas en una rejilla.</li>
+        <li><b>grid-template-rows</b> - Especifica el tamaño de las filas en la rejilla.</li>
+        <li><b>row-gap</b> - Especifica el gap entre las filas de la grilla.</li>
+    </ul>
+    
+</content>
+
+    </main>
+    <footer>
+        <nav>
+            <h2>seguidnos en nuestras redes sociales</h2>
+            <ul class="Social_Media">
+                <a href="https://instagram.com"><img class="social" src="https://i.ibb.co/47qdYyC/instagram-icon-512x512-ggh8x3cn.png" alt="Team_Image"></a>
+                <a href="https://facebook.com"><img class="social" src="https://i.ibb.co/Rvpqfq6/image.png" alt="Team_Image"></a>
+                <a href="https://x.com"><img class="social" src="https://i.ibb.co/4M6Y7Yp/aHlicmlk.jpg" alt="Team_Image"></a>
+                <a href="https://linkedin.com"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Team_Image"></a>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

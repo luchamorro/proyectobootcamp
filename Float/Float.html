@@ -4,76 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" hreflang="style.css">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .sub{
+            background-color: rgb(184, 255, 91);
+            padding: 10px 0 10px 0;
+            color: white;
+            margin: 0;
+        }
+        .float {
+            background-color: rgb(197, 252, 190);
+            margin: 0;
+            padding: 2rem;
+        }
+        .etiq{
+            text-align: center;
+            margin: 2rem;
+        }
+        .sint{
+            margin: 0.5rem 2rem;
+        }
+        ul{
+            margin: 1rem 5rem;
+        }
+        .aaa{
+            text-align: center;
+        }
+        .clear{
+            background-color: rgb(148, 223, 139);
+            margin: 0;
+            padding: 2rem;
+        }
+        .overflow{
+            background-color: rgb(162, 182, 159);
+            margin-bottom: 0;
+            padding: 2rem;
+        }
+        .f_exp{
+            display: flex;
+        }
+        .valores{
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+        }
+        .img1{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img1 img{
+            width: 30rem;
+            display: flex;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <h2>Los Elementos FLotantes</h2>
+<header class="ulSection1">
+     <h1>Recursos HTML y CSS</h1>
+        <img src="/Imagenes/logo/logo.png" alt="Team_Image">
 </header>
+<nav>
+    <ul class="ul1">
+        <li class="menu"><a href="/index.html">Inicio</a></li>
+        <li class="menu"><a href="/box_model/box_model.html">CSS Box Model</a></li>
+        <li class="menu"><a href="/css_grid/css_grid.html">CSS Grid</a></li>
+        <li class="menu"><a href="">Etiquetas</a></li>
+        <li class="menu"><a href="/Float/Float.html">Float</a></li>
+        <li class="menu"><a href="/SEO/SEO.html">SEO</a></li>
+    </ul>
+</nav>
 <main>
-    <div>
+    <h2 class="sub">Los Elementos FLotantes</h2>
+    <div class="float">
         <h3>Float</h3>
-        <p>Es una etiqueta de CSS que permite ubicar y mover un elemento en torno a un texto. Interviene en el flujo normal del texto y se integra en él según el valor que se le dé. Este elemento se llama elemento flotante y dependiendo del valor otorgado modifica el display.</p>
+        <p class="etiq">Es una etiqueta de CSS que permite ubicar y mover un elemento en torno a un texto. Interviene en el flujo normal del texto y se integra en él según el valor que se le dé. Este elemento se llama elemento flotante y dependiendo del valor otorgado modifica el display.</p>
         <ul>
             <li>Block: inline, inline-block, inline-table, inline-row, inline-row-group, table-column, table-column-group, table-cell, table-caption, table-header-group, table-footer-group.</li>
             <li>Flex: inline-flex.</li>
             <li>Grid:  inline-grid.</li>
         </ul>
-        <p>Su sintaxis es sencilla, va en la parte de CSS, tanto en el archivo Style, como dentro de la etiqueta.</p>
-        <p>Sería tal que así:</p>
-        <p>Aaaaa{ float: right; }</p>
-        <ul>Sus valores posibles son: 
-            <li>Left: El elemento debe flotar a la izquierda de su bloque contenedor.</li>
-            <li>Right: El elemento debe flotar a la derecha de su bloque contenedor.</li>
-            <li>Inline-start: El elemento debe flotar en el costado de inicio de su bloque contenedor.</li>
-            <li>Inline-end: El elemento debe flotar en el costado de término de su bloque contenedor.</li>
-            <li>None: El elemento no deberá flotar. Siendo este último el default.</li>
-        </ul>
-        <ul>Sus valores globales son:
-            <li>Inherit:</li>
-            <li>Initial:</li>
-            <li>Unset:</li>
-        </ul>
+        <p class="sint">Su sintaxis es sencilla, va en la parte de CSS, tanto en el archivo Style, como dentro de la etiqueta.</p>
+        <p class="sint">Sería tal que así:</p>
+        <p class="aaa">Aaaaa{ float: right; }</p>
+        <div class="f_exp">   
+            <div class="valores">
+                <ul>Sus valores posibles son: 
+                    <li>Left: El elemento debe flotar a la izquierda de su bloque contenedor.</li>
+                    <li>Right: El elemento debe flotar a la derecha de su bloque contenedor.</li>
+                    <li>Inline-start: El elemento debe flotar en el costado de inicio de su bloque contenedor.</li>
+                    <li>Inline-end: El elemento debe flotar en el costado de término de su bloque contenedor.</li>
+                    <li>None: El elemento no deberá flotar. Siendo este último el default.</li>
+                </ul>
+                <ul>Sus valores globales son:
+                    <li>Inherit:</li>
+                    <li>Initial:</li>
+                    <li>Unset:</li>
+                </ul>
+            </div>
+            <div class="img1">
+                <img src="img/Float.png" alt="Float expample">
+            </div>
+        </div>
     </div>
-    <div>
+    <div class="clear">
         <h3>Clear</h3>
-        <p>Es una etiqueta de CSS que especifica si un elemento puede estar al lado de elementos flotantes o debe ser movido debajo de ellos.</p>
-        <p>Sería tal que así:</p>
-        <p>Aaaaa{ clear: right; }</p>
-        <ul>Sus valores posibles son:
-            <li>Right: El elemento es movido hacia abajo para limpiar elementos flotantes a la derecha.</li>
-            <li>Left: El elemento es movido hacia abajo para limpiar elementos flotantes a la izquierda.</li>
-            <li>Both: el elemento es movido hacia abajo para limpiar tanto elementos flotantes de la izquierda como de la derecha.</li>
-            <li>Inline-start: El elemento es movido hacia abajo para limpiar elementos flotantes al inicio del bloque contenedor.</li>
-            <li>Inline-end: El elemento es movido hacia abajo para limpiar floats al final del bloque contenedor.</li>
-            <li>None: El elemento no es movido hacia abajo para limpiar elementos flotantes anteriores. Siendo este último el default.</li>
-        </ul>
-        <p>Sería tal que así:</p>
-        <p>Aaaaa{ float: right; }</p>
-        <ul>Sus valores posibles son: 
-            <li>Visible: El contenido no es recortado.</li>
-            <li>Hidden: El contenido es recortado y no se muestran barras de posición.</li>
-            <li>Scroll: El contenido es recortado y el navegador web usa las barras de desplazamiento.</li>
-            <li>Auto: Depende del agente de usuario. Navegadores de escritorio como Firefox proveen barras de desplazamiento si hay contenido excedente.</li>
-        </ul>
+        <p class="etiq">Es una etiqueta de CSS que especifica si un elemento puede estar al lado de elementos flotantes o debe ser movido debajo de ellos.</p>
+        <p class="sint">Sería tal que así:</p>
+        <p class="aaa">Aaaaa{ clear: right; }</p>
+        <div class="f_exp">
+            <div>
+                <ul>Sus valores posibles son:
+                    <li>Right: El elemento es movido hacia abajo para limpiar elementos flotantes a la derecha.</li>
+                    <li>Left: El elemento es movido hacia abajo para limpiar elementos flotantes a la izquierda.</li>
+                    <li>Both: el elemento es movido hacia abajo para limpiar tanto elementos flotantes de la izquierda como de la derecha.</li>
+                    <li>Inline-start: El elemento es movido hacia abajo para limpiar elementos flotantes al inicio del bloque contenedor.</li>
+                    <li>Inline-end: El elemento es movido hacia abajo para limpiar floats al final del bloque contenedor.</li>
+                    <li>None: El elemento no es movido hacia abajo para limpiar elementos flotantes anteriores. Siendo este último el default.</li>
+                </ul>
+            </div>
+            <div class="img1">
+                <img src="img/Clear.png" alt="Float expample">
+            </div>
+        </div>
     </div>
-    <div>
+    <div class="overflow">
         <h3>Overflow</h3>
-        <p>Es una etiqueta de CSS que especifica si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.</p>
-        <p>Su sintaxis es sencilla, va en la parte de CSS, tanto en el archivo Style, como dentro de la etiqueta.</p>
-        <p>Sería tal que así:</p>
-        <p>Aaaaa{ Overflow: visible; }</p>
-        <ul>Sus valores posibles son:
-            <li>Visible: El contenido no es recortado.</li>
-            <li>Hidden: El contenido es recortado y no se muestran barras de posición.</li>
-            <li>Scroll: El contenido es recortado y el navegador web usa las barras de desplazamiento.</li>
-            <li>Auto: Depende del agente de usuario. Navegadores de escritorio como Firefox proveen barras de desplazamiento si hay contenido excedente.</li>
-        </ul>
+        <p class="etiq">Es una etiqueta de CSS que especifica si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.</p>
+        <p class="sint">Su sintaxis es sencilla, va en la parte de CSS, tanto en el archivo Style, como dentro de la etiqueta.</p>
+        <p class="sint">Sería tal que así:</p>
+        <p class="aaa">Aaaaa{ Overflow: visible; }</p>
+        <div class="f_exp">
+            <div>
+                <ul>Sus valores posibles son:
+                    <li>Visible: El contenido no es recortado.</li>
+                    <li>Hidden: El contenido es recortado y no se muestran barras de posición.</li>
+                    <li>Scroll: El contenido es recortado y el navegador web usa las barras de desplazamiento.</li>
+                    <li>Auto: Depende del agente de usuario. Navegadores de escritorio como Firefox proveen barras de desplazamiento si hay contenido excedente.</li>
+                </ul>
+            </div>
+            <div class="img1">
+                <img src="img/Overflow.png" alt="Float expample">
+            </div>
+        </div>
     </div>            
-    </main>
+</main>
 
 <footer>
-
+    <nav>
+        <h2>seguidnos en nuestras redes sociales</h2>
+        <ul class="Social_Media">
+            <a href="https://instagram.com"><img class="social" src="https://i.ibb.co/47qdYyC/instagram-icon-512x512-ggh8x3cn.png" alt="Team_Image"></a>
+            <a href="https://facebook.com"><img class="social" src="https://i.ibb.co/Rvpqfq6/image.png" alt="Team_Image"></a>
+            <a href="https://x.com"><img class="social" src="https://i.ibb.co/4M6Y7Yp/aHlicmlk.jpg" alt="Team_Image"></a>
+            <a href="https://linkedin.com"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Team_Image"></a>
+        </ul>
+    </nav>
 </footer>
 
 </body>

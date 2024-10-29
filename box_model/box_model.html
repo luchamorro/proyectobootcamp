@@ -8,7 +8,16 @@
 <!-- <link rel="stylesheet" href="style_box_model.css"> -->
 </head>
 <style>
+.sub {
+        background-color: rgb(184, 255, 91);
+        padding: 10px 0 10px 0;
+        color: white;
+    }
+.txt{
+    text-align: center;
+}
 
+   /*Alejandro */
 .ejemplo1 {
 
     background-color: pink;
@@ -29,44 +38,73 @@
     .codigo div {
         width: 20rem;
     }
-
     p{
 
                 width: 80%;
+                margin-top: 2rem;
+                margin-bottom: 2rem;;
     }
+
+.lista {
+
+list-style: none;
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+line-height: 3rem;
+margin-left: 3rem;
+
+}
+
+.enumeradas {
+
+    list-style: none;
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+line-height: 1.5rem;
+margin-left: 1.5rem;
+}
+
+
 
 </style>
 
 
 <body>
-    <header>
+    <header class="ulSection1">
         <h1>Recursos HTML y CSS</h1>
-    <nav>
-        <ul> 
-            <li class="menu"><a href="/index.html">Inicio</a></li>
-            <li class="menu"><a href="">CSS Box Model</a></li>
-            <li class="menu"><a href="">CSS Grid</a></li>
-            <li class="menu"><a href="">Etiquetas</a></li>
-            <li class="menu"><a href="">Float</a></li>
-            <li class="menu"><a href="">SEO</a></li>
-        </ul>
-    </nav>
-    </header>
-    <main>       
+           <img src="/Imagenes/logo/logo.png" alt="Team_Image">
+   </header>
+   <nav>
+       <ul class="ul1">
+           <li class="menu"><a href="/index.html">Inicio</a></li>
+           <li class="menu"><a href="/box_model/box_model.html">CSS Box Model</a></li>
+           <li class="menu"><a href="/css_grid/css_grid.html">CSS Grid</a></li>
+           <li class="menu"><a href="">Etiquetas</a></li>
+           <li class="menu"><a href="/Float/Float.html">Float</a></li>
+           <li class="menu"><a href="/SEO/SEO.html">SEO</a></li>
+       </ul>
+   </nav>
+<main>       
 
-<h2>CSS Box Model</h2>
+<h2 class="sub">CSS Box Model</h2>
 
-<p>Consiste en una caja que envuelve cada elemento HTML e incluye: content, padding, borders and margins.
+<p class="txt">Consiste en una caja que envuelve cada elemento HTML e incluye: content, padding, borders and margins.
 </p>
 
-<img src="img/1.png" alt="CSS Box Model" width="60%">
+<img src="img/1.png" alt="CSS Box Model" width="40%">
 
 <p>Explicación de las diferentes partes: <br>
-Content: el contenido del cuadro, donde aparecen el texto y las imágenes.
-Padding: borra un área alrededor del contenido. El padding es transparente.
-Border: borde que rodea el padding y el content.
-Margin: borra un área fuera del borde. El margen es transparente.
+    <ul class="lista">
+<li>Content: el contenido del cuadro, donde aparecen el texto y las imágenes.</li>
+<li>Padding: borra un área alrededor del contenido. El padding es transparente.</li>
+<li>Border: borde que rodea el padding y el content.</li>
+<li>Margin: borra un área fuera del borde. El margen es transparente.</li>
+    </ul>
 </p>
+
+<p> El BOX MODEL permite agregar un borde alrededor de los elementos y definir el espacio entre elementos.</p>
 
 <p>Ejemplo:</p>
 
@@ -92,19 +130,55 @@ Margin: borra un área fuera del borde. El margen es transparente.
 </div>
 </div>
 
+<h3>CSS Outline</h3>
 
+<p>
+    Outline es una línea que se dibuja alrededor de elementos FUERA de los bordes.
+    </p>
 
+    <p> Ejemplo:</p>
 
+    <img src="img/2.png" alt="Outline" width="50%">
 
+    <p>Propiedades:</p>
 
+    <ul class="enumeradas">
+        <li>outline-style</li>
+        <li>outline-color</li>
+        <li>outline-width</li>
+        <li>outline-offset</li>
+        <li>outline</li>
+    </ul>
+    
+    <p>Outline es diferente a border. A diferencia de border la outline es dibujada fuera del borde del elemento y puede superponerse a otro contenido. Además outline no es parte de las dimensiones del elemento. El height y width del elemento no es afectado por el width del outline.
+    </p>
 
+   <h3>CSS Box Sizing</h3>
 
+   <p>Esta propiedad permite incluir el padding y el border en el total del width y height de un elemento. </p>
+    
+    <p>Por defecto, cuando no incluimos la propiedad Box Sizing a un elemento, se le suman el padding y el borde al ancho total del elemento:</p>
+    
+    <p>width + padding + border = ancho real de un elemento
+    </p>
+
+    <p>height + padding + border = alto real de un elemento</p>
+    
+    <p>La propiedad Box Sizing permite agregar el border y el padding al width y height total del elemento</p>
+    
 
     </main>
-<footer>
-
-</footer>
+    <footer>
+        <nav>
+            <h2>seguidnos en nuestras redes sociales</h2>
+            <ul class="Social_Media">
+                <a href="https://instagram.com"><img class="social" src="https://i.ibb.co/47qdYyC/instagram-icon-512x512-ggh8x3cn.png" alt="Team_Image"></a>
+                <a href="https://facebook.com"><img class="social" src="https://i.ibb.co/Rvpqfq6/image.png" alt="Team_Image"></a>
+                <a href="https://x.com"><img class="social" src="https://i.ibb.co/4M6Y7Yp/aHlicmlk.jpg" alt="Team_Image"></a>
+                <a href="https://linkedin.com"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Team_Image"></a>
+            </ul>
+        </nav>
+    </footer>
 
 </body>
 </html>
-

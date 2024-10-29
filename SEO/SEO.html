@@ -4,32 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursos HTML y CSS</title>
-    <link rel="stylesheet" hreflang="SEO.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
+
+<style>
+    
+    .SEO {
+background-color: rgb(229, 229, 255);
+}
+
+
+.navseo > * {
+    margin-bottom: 8px;    
+}
+
+.navseo {
+    background-color: #eceaea;
+}
+
+.SEO2 h2 {
+    background-color: red;
+    color: white;
+    padding: 15px 0 15px 0;
+    margin: 0 28% 20px 28%;
+    border-radius: 5px;
+}
+
+.SEO2 img {
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto 20px auto;
+    height: auto;
+    width: 400px;
+    border-radius: 6px;
+}
+
+.SEO2 P {
+    font-weight: bold;
+}
+
+main h2 {
+    background-color: rgb(184, 255, 91);
+    padding: 10px 0 10px 0;
+    color: white;
+}
+
+.SEO_TAGS P {
+    font-weight: bold;
+}
+
+.SEO_TAGS img {
+    height: auto;
+    width: 500px;
+    border-radius: 6px;
+    display: block;
+    margin: 20px auto 20px auto;
+    border: 1px solid black;
+}
+
+.SEO p {
+    margin: 0 5% 0 5%;
+    padding: 20px 0 20px 0;
+    text-align: justify;
+}
+
+
+main h1 {
+    background-color: rgb(182, 182, 255);
+    color: white;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+
+.navseo {
+    padding: 20px 5% 20px 5%;
+}
+
+</style>
+
 <body>
-    <header>
+    <header class="ulSection1">
         <h1>Recursos HTML y CSS</h1>
+        <img src="/Imagenes/logo/logo.png" alt="Team_Image">
+    </header>
     <nav>
-        <ul> 
+        <ul class="ul1"> 
             <li class="menu"><a href="/index.html">Inicio</a></li>
-            <li class="menu"><a href="">CSS Box Model</a></li>
-            <li class="menu"><a href="">CSS Grid</a></li>
+            <li class="menu"><a href="/box_model/box_model.html">CSS Box Model</a></li>
+            <li class="menu"><a href="/css_grid/css_grid.html">CSS Grid</a></li>
             <li class="menu"><a href="">Etiquetas</a></li>
-            <li class="menu"><a href="">Float</a></li>
+            <li class="menu"><a href="/Float/Float.html">Float</a></li>
             <li class="menu"><a href="SEO.html">SEO</a></li>
         </ul>
     </nav>
-    </header>
         <main>
+            <h2>SEO</h2>
             <div class="SEO">
-            <h1>SEO</h1>
             <p>El SEO significa search engine optimization o optimización para buscadores y son elementos y contenidos que debería tener una página web para que pueda ser rankeada por google y tener un porcentaje muy alto de visibilidad en la primera fila de la búsqueda de google.com</p>
             </div>
-            
-            <div class="SEO2">
-                <h1>Key Component of SEO</h1>
 
-                <p>Búsqueda de palabras claves:</p>
+            <div class="SEO2">
+                <h2>😌 Key Component of SEO 😌</h2>
+                <img src="https://i.ibb.co/m0KrWvd/SEO2.png" alt="seo image">
+                
+                <nav class="navseo">
+                
+                    <p>Búsqueda de palabras claves:</p>
                 <ul><li>Palabras claves más relevantes</li></ul>
 
                 <p>Contenido de calidad:</p>
@@ -51,45 +132,24 @@
                 
                 <p>Testimonies:</p>
                 <ul><li>Testimonios de personas o empresas satisfechas del servicio/producto</li></ul>
-
-                <div class="SEO_TAGS"> 
-
-                <h1>SEO’S IMPORTANT TAGS</h1>
-
-                <p>Title Tag ('&lt;title&gt;'):</p>
-                <ul>
-                    <li>&lt;title&gt;Buy Electric Massagers Online - Free Shipping&lt;/title&gt;</li>
-                </ul>
-
-                <p>Meta Description (&lt;meta name="description"&gt;)</p>
-                <ul>
-                    <li>&lt;meta name="description" content="Discover our range of electric massagers for pain relief. Fast shipping and satisfaction guarantee. Shop now!"&gt;
-                </li>
-            </ul>
-
-                <p>Header Tags (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc.)</p>
-                <ul>
-                    <li>&lt;h1&gt;Best Electric Massagers for Pain Relief&lt;/h1&gt;</li>
-                    <li>&lt;h2&gt;Why Choose Electric Massagers?&lt;/h2&gt;</li>
-                <li>&lt;h3&gt;Top Picks for Muscle Relaxation&lt;/h3&gt;</li>
-                </ul>
-                
-                <p>Image Alt Text (alt Attribute in &lt;img&gt;)</p>
-                <ul>
-                    <li>&lt;img src="electric-massager.jpg" alt="Electric massager for muscle pain relief"&gt;</li>
-                </ul>
-
-                <p>Image Alt Text (alt Attribute in &lt;img&gt;)</p>
-                <ul>
-                    <li>&&lt;a href="electric-massagers.html"&gt;Explore our electric massagers&lt;/a&gt;</li>
-            </ul>
-
-
+</nav>
             </div>
+                <div class="SEO_TAGS"> 
+                <h2>SEO’S IMPORTANT TAGS</h2>
+                <img src="https://i.ibb.co/LgDhyKH/content.png" alt="Image of seo important tags">
+        </div>
         </main>
-    <footer>
-</footer>
-
+        <footer>
+            <nav>
+                <h2>seguidnos en nuestras redes sociales</h2>
+                <ul class="Social_Media">
+                    <a href="https://instagram.com"><img class="social" src="https://i.ibb.co/47qdYyC/instagram-icon-512x512-ggh8x3cn.png" alt="Team_Image"></a>
+                    <a href="https://facebook.com"><img class="social" src="https://i.ibb.co/Rvpqfq6/image.png" alt="Team_Image"></a>
+                    <a href="https://x.com"><img class="social" src="https://i.ibb.co/4M6Y7Yp/aHlicmlk.jpg" alt="Team_Image"></a>
+                    <a href="https://linkedin.com"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Team_Image"></a>
+                </ul>
+            </nav>
+        </footer>
 </body>
 </html>
 
