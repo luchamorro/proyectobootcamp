@@ -4,55 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indice de Temas Principales</title>
-    <link rel="stylesheet" hreflang="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-    <header>
-        <h1>Indice de Temas Principales</h1>
 
+<style>
+ h3{
+    color: white;
+    background-color: rgb(184, 255, 91);
+}    
+.intro{
+    text-align: center;
+}
+main h2 {
+    background-color: rgb(184, 255, 91);
+    padding: 10px 0 10px 0;
+    color: white;
+}
+.content1 > * {
+    padding-left: 5%;
+}
+li{
+    margin-left: 2rem;
+}
+</style>
+
+
+<body>
+    <header class="ulSection1">
+        <h1>Recursos HTML y CSS</h1>
+        <img src="/Imagenes/logo/logo.png" alt="Team_Image">
+    </header>
+    <nav>
+        <ul class="ul1">
+            <li class="menu"><a href="/index.html">Inicio</a></li>
+            <li class="menu"><a href="/box_model/box_model.html">CSS Box Model</a></li>
+            <li class="menu"><a href="/css_grid/css_grid.html">CSS Grid</a></li>
+            <li class="menu"><a href="etiquetas.html">Etiquetas</a></li>
+            <li class="menu"><a href="/Float/Float.html">Float</a></li>
+            <li class="menu"><a href="/SEO/SEO.html">SEO</a></li>
+        </ul>
+    </nav>
     </header>
     
 <main>
-    <section id="Indice">
-        <h2>Indice</h2>
-        <ul>
-            <li><a href="#etiquetas-semanticas">Etiquetas Sematicas</a></li>
-            <li><a href="#etiquetas-basicas">Etiquetas Básicas</a></li>
-        </ul>
-        
+    <h2>Etiquetas de HTML5</h2>
+    <p class="intro">Las etiquetas HTML son elementos que contienen la información del documento. Se dividen en semánticas y básicas y se diferencian en que las primeras definen el contenido que engloban, en cambio las segundas solo encierran contenido.</p>
+    <h3>SEMÁNTICAS</h3>
+
+<div class="content1">
     
-    </section>
+    
 
-    <section id="Etiquetas-Semanticas">
-        <h2>Etiquetas Semanticas</h2>
-        <p>Las etiquetas semánticas nos indican de qué es el contenido. Nos ayudan a comprender el propósito de cada sección y facilitan la indexación por los motores de búsqueda como Google.</p>
-        <p>Algunos ejemplos son:</p>
-        <ul>
-            <li><strong>&lt;header&gt;</strong>: Indica la cabecera de la página.</li>
-            <li><strong>&lt;nav&gt;</strong>: Muestra el menu de navegación.</li>
-            <li><strong>&lt;main&gt;</strong>: Representa el contenido principal.</li>
-            <li><strong>&lt;article&gt;</strong>: Muestra el articulo especifico.</li>
-            <li><strong>&lt;footer&gt;</strong>: Es el pie de pagina</li>
-        </ul>
+    <p><b>Metadatos del Documento:</b></p>
+    <ul>
+        <li>&lt;head&gt;: Contenedor para metadatos.</li>
+        <li>&lt;title&gt;: Título de la página, visible en la pestaña del navegador.</li>
+        <li>&lt;meta&gt;: Metadatos sobre el documento (charset, viewport, etc.).</li>
+        <li>&lt;link&gt;: Enlace a recursos externos (CSS, favicon, etc.).</li>
+        <li>&lt;style&gt;: CSS dentro del HTML.</li>
+    </ul>
 
-    </section>
 
-    <section id="Etiquetas-basicas">
-        <h2>Etiquetas Basicas</h2>
-        <p>Las etiquetas básicas no nos indican mucho sobre el contenido. Simplemente son contenedores sin un significado específico.</p>
-        <p>Algunos ejemplos son:</p>
-        <ul>
-            <li><strong>&lt;div&gt;</strong>:Crea un bloque en la página; puede contener cualquier tipo de contenido.</li>
-            <li><strong>&lt;span&gt;</strong>: Etiqueta en línea utilizada para pequeñas porciones de texto o elementos.</li>
-        </ul>
-    </section>
+
+
+
+<p><b>Estructura:</b></p>    
+
+<ul> 
+
+    <li>    &lt;header&gt;: Encabezado de una sección o página.</li>
+    <li>    &lt;footer&gt;: Pie de página de una sección o página.</li>
+    <li>    &lt;nav&gt;: Contenedor de enlaces de navegación.</li>
+    <li>    &lt;main&gt;: Contenido principal de la página.</li>
+    <li>    &lt;section&gt;: Sección temática dentro de una página.</li>
+    <li>    &lt;article&gt;: Contenido independiente, como una entrada de blog o un artículo.</li>
+    <li>    &lt;aside&gt;: Contenido relacionado pero secundario, como una barra lateral.</li>
+    <li>    &lt;hgroup&gt;: Agrupación de elementos de encabezado (&lt;h1&gt;, &lt;h2&gt;, etc.).</li>
+
+</ul>
+
+<p><b>Texto y Media:</b></p>
+<ul> 
+    <li>&lt;p&gt;: Párrafo. // &lt;pre&gt;: Texto preformateado.</li>
+    <li>&lt;q&gt;: Cita en línea. // &lt;blockquote&gt;: Cita en bloque.</li>
+    <li>&lt;figcaption&gt;: Pie de figura que acompaña a &lt;figure&gt;:para contenido ilustrativo.</li>
+    <li>&lt;address&gt;: Información de contacto.</li>
+</ul>
+    
+<p><b>Lista:</b></p>
+<ul>
+    <li>&lt;ol&gt;: Lista ordenada.</li>
+    <li>&lt;ul&gt;: Lista desordenada.</li>
+    <li>&lt;li&gt;: Elemento de lista.</li>
+</ul>
+<p><b>Enlaces</b></p>
+<ul> 
+    <li>&lt;a&gt;: Enlace a otra página o ubicación.</li>
+</ul>
+
+
+<p><b>Tablas y Datos Tabulares:</b></p>
+<ul>
+<li>&lt;table&gt;: Contenedor de tabla.</li>
+<li>&lt;caption&gt;: Título de la tabla.</li>
+<li>&lt;thead&gt;: Encabezado de la tabla.</li>
+<li>&lt;tbody&gt;: Cuerpo de la tabla.</li>
+<li>&lt;tfoot&gt;: Pie de la tabla.</li>
+<li>&lt;tr&gt;: Fila de la tabla.</li>
+<li>&lt;th&gt;: Encabezado de celda.</li>
+<li>&lt;td&gt;: Celda de datos.</li>
+</ul>
+
+
+
+<p>Formularios:</p>
+<ul> 
+<li>&lt;form&gt;: Formulario.</li>
+<li>&lt;input&gt;: Entrada de datos.</li>
+<li>&lt;label&gt;: Etiqueta para elementos de formulario.</li>
+<li>&lt;fieldset&gt;: Agrupación de controles dentro de un formulario.</li>
+<li>&lt;legend&gt;: Título de un grupo de elementos de formulario.</li>
+<li>&lt;select&gt;: Lista desplegable.</li>
+<li>&lt;optgroup&gt;: Agrupación de opciones en un desplegable.</li>
+<li>&lt;option&gt;: Opción de un desplegable.</li>
+<li>&lt;textarea&gt;: Área de texto.</li>
+<li>&lt;button&gt;: Botón.</li>
+</ul>
+
+<p>Multimedia:</p>
+<ul> 
+<li>&lt;img&gt;: Imagen. // &lt;audio&gt;: Audio. // &lt;video&gt;: Video.</li>
+<li>&lt;source&gt;: Fuente de recursos multimedia (dentro de &lt;audio&gt; o &lt;video&gt;).</li>
+&lt;track&gt;: Texto para subtítulos, capítulos o descripciones para &lt;video&gt;.</li>
+
+<p>Script y Programación:</p>
+<ul> 
+<li>&lt;script&gt;: Bloque de código JavaScript.</li>
+<li>&lt;canvas&gt;: Área de dibujo para gráficos dinámicos en 2D y 3D.</li>
+</ul>
+
+
+<!-----------------------------Básicas-------->
+
+<h3>BÁSICAS</h3>
+
+<p>Estructura:</p>
+<ul> 
+    <li>&lt;html&gt;: Elemento raíz que envuelve todo el contenido de la página.</li>
+<li>&lt;body&gt;: Contenedor del contenido principal visible en la página.</li>
+</ul>
+
+<p>Encabezados:</p>
+<ul> 
+<li>&lt;h1&gt; a &lt;h6&gt;: Encabezados de diferentes niveles (Solo debe haber un &lt;h1&gt; por web).</li>
+</ul>
+
+<p>Texto:</p>
+<ul> 
+<li>&lt;b&gt;: Negrita sin // &lt;strong&gt;: Negrita con (Énfasis semántico).</li>
+<li>&lt;i&gt;: Cursiva sin // &lt;em&gt;: Cursiva con (Énfasis semántico).</li>
+<li>&lt;small&gt;: Tamaño pequeño.</li>
+<li>&lt;mark&gt;: Resaltado.</li>
+<li>&lt;br&gt;: Salto de linea.</li>
+<li>&lt;del&gt;: Tachado.</li>
+<li>&lt;ins&gt;: Subrayado.</li>
+<li>&lt;hr&gt;: Línea horizontal.</li>
+</ul>
+
+
+<p>Contenido genérico:</p>
+<ul> 
+<li>&lt;div&gt;: División o contenedor para agrupar otros elementos.</li>
+<li>&lt;span&gt;: Contenedor en línea para agrupar sin romper el flujo del texto.</li>
+</ul>
+
+    <p>Multimedia:</p>
+    <ul> 
+<li>&lt;embed&gt;: Incrustación de contenido externo (por ejemplo, un archivo PDF).</li>
+<li>&lt;object&gt;: Inserción de contenido multimedia o recursos externos.</li>
+<li>&lt;param&gt;: Parámetros para elementos &lt;object&gt;.</li>
+</ul>
+
+<p>Metadatos y Recursos Externos:</p>
+<ul> 
+<li>&lt;base&gt;: Establece la URL base para los enlaces relativos en el documento.</li>
+</ul>
+
+<p>Etiquetas Obsoletas:</p>
+
+Algunas etiquetas que pueden encontrarse en sitios web antiguos, pero que están en desuso en HTML5:
+<ul> 
+<li>&lt;center&gt;: Alineación centrada de contenido (reemplazada por CSS).</li>
+<li>&lt;font&gt;: Personalización de fuentes (reemplazada por CSS).</li>
+<li>&lt;acronym&gt;: Para definir acrónimos (reemplazada por &lt;abbr&gt;).</li>
+</ul>
+
+
+
+
+
+
+</div>
+
 
     
     
 </main>
 
 <footer>
-
+    <nav>
+        <h2>seguidnos en nuestras redes sociales</h2>
+        <ul class="Social_Media">
+            <a href="https://instagram.com"><img class="social" src="https://i.ibb.co/47qdYyC/instagram-icon-512x512-ggh8x3cn.png" alt="Social Media Team"></a>
+            <a href="https://facebook.com"><img class="social" src="https://i.ibb.co/Rvpqfq6/image.png" alt="Social Media Team"></a>
+            <a href="https://x.com"><img class="social" src="https://i.ibb.co/4M6Y7Yp/aHlicmlk.jpg" alt="Social Media Team"></a>
+            <a href="https://linkedin.com"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Social Media Team"></a>
+        </ul>
+    </nav>
+    
 </footer>
 
 </body>
