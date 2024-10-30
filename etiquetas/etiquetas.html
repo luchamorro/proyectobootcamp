@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indice de Temas Principales</title>
+    <title>Recursos HTML y CSS</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -20,10 +20,10 @@ main h2 {
     padding: 10px 0 10px 0;
     color: white;
 }
-.content1 > * {
+.content > *{
     padding-left: 5%;
 }
-li{
+main li{
     margin-left: 2rem;
 }
 </style>
@@ -51,9 +51,7 @@ li{
     <p class="intro">Las etiquetas HTML son elementos que contienen la información del documento. Se dividen en semánticas y básicas y se diferencian en que las primeras definen el contenido que engloban, en cambio las segundas solo encierran contenido.</p>
     <h3>SEMÁNTICAS</h3>
 
-<div class="content1">
-    
-    
+<div class="content">
 
     <p><b>Metadatos del Documento:</b></p>
     <ul>
@@ -117,7 +115,7 @@ li{
 
 
 
-<p>Formularios:</p>
+<p><b>Formularios:</b></p>
 <ul> 
 <li>&lt;form&gt;: Formulario.</li>
 <li>&lt;input&gt;: Entrada de datos.</li>
@@ -131,84 +129,76 @@ li{
 <li>&lt;button&gt;: Botón.</li>
 </ul>
 
-<p>Multimedia:</p>
+<p><b>Multimedia:</b></p>
 <ul> 
-<li>&lt;img&gt;: Imagen. // &lt;audio&gt;: Audio. // &lt;video&gt;: Video.</li>
-<li>&lt;source&gt;: Fuente de recursos multimedia (dentro de &lt;audio&gt; o &lt;video&gt;).</li>
-&lt;track&gt;: Texto para subtítulos, capítulos o descripciones para &lt;video&gt;.</li>
-
-<p>Script y Programación:</p>
-<ul> 
-<li>&lt;script&gt;: Bloque de código JavaScript.</li>
-<li>&lt;canvas&gt;: Área de dibujo para gráficos dinámicos en 2D y 3D.</li>
+    <li>&lt;img&gt;: Imagen. // &lt;audio&gt;: Audio. // &lt;video&gt;: Video.</li>
+    <li>&lt;source&gt;: Fuente de recursos multimedia (dentro de &lt;audio&gt; o &lt;video&gt;).</li>
+    <li>&lt;track&gt;: Texto para subtítulos, capítulos o descripciones para &lt;video&gt;.</li>
 </ul>
-
+<p><b>Script y Programación:</b></p>
+<ul> 
+    <li>&lt;script&gt;: Bloque de código JavaScript.</li>
+    <li>&lt;canvas&gt;: Área de dibujo para gráficos dinámicos en 2D y 3D.</li>
+</ul>
+ </div>
 
 <!-----------------------------Básicas-------->
 
 <h3>BÁSICAS</h3>
 
-<p>Estructura:</p>
+<div class="content"> 
+
+<p><b>Estructura:</b></p>
 <ul> 
     <li>&lt;html&gt;: Elemento raíz que envuelve todo el contenido de la página.</li>
 <li>&lt;body&gt;: Contenedor del contenido principal visible en la página.</li>
 </ul>
 
-<p>Encabezados:</p>
+<p><b>Encabezados:</b></p>
 <ul> 
 <li>&lt;h1&gt; a &lt;h6&gt;: Encabezados de diferentes niveles (Solo debe haber un &lt;h1&gt; por web).</li>
 </ul>
 
-<p>Texto:</p>
+<p><b>Texto:</b></p>
 <ul> 
-<li>&lt;b&gt;: Negrita sin // &lt;strong&gt;: Negrita con (Énfasis semántico).</li>
-<li>&lt;i&gt;: Cursiva sin // &lt;em&gt;: Cursiva con (Énfasis semántico).</li>
-<li>&lt;small&gt;: Tamaño pequeño.</li>
-<li>&lt;mark&gt;: Resaltado.</li>
-<li>&lt;br&gt;: Salto de linea.</li>
-<li>&lt;del&gt;: Tachado.</li>
-<li>&lt;ins&gt;: Subrayado.</li>
-<li>&lt;hr&gt;: Línea horizontal.</li>
+    <li>&lt;b&gt;: Negrita sin // &lt;strong&gt;: Negrita con (Énfasis semántico).</li>
+    <li>&lt;i&gt;: Cursiva sin // &lt;em&gt;: Cursiva con (Énfasis semántico).</li>
+    <li>&lt;small&gt;: Tamaño pequeño.</li>
+    <li>&lt;mark&gt;: Resaltado.</li>
+    <li>&lt;br&gt;: Salto de linea.</li>
+    <li>&lt;del&gt;: Tachado.</li>
+    <li>&lt;ins&gt;: Subrayado.</li>
+    <li>&lt;hr&gt;: Línea horizontal.</li>
 </ul>
 
 
-<p>Contenido genérico:</p>
+<p><b>Contenido genérico:</b></p>
 <ul> 
-<li>&lt;div&gt;: División o contenedor para agrupar otros elementos.</li>
-<li>&lt;span&gt;: Contenedor en línea para agrupar sin romper el flujo del texto.</li>
+    <li>&lt;div&gt;: División o contenedor para agrupar otros elementos.</li>
+    <li>&lt;span&gt;: Contenedor en línea para agrupar sin romper el flujo del texto.</li>
 </ul>
 
-    <p>Multimedia:</p>
-    <ul> 
-<li>&lt;embed&gt;: Incrustación de contenido externo (por ejemplo, un archivo PDF).</li>
-<li>&lt;object&gt;: Inserción de contenido multimedia o recursos externos.</li>
-<li>&lt;param&gt;: Parámetros para elementos &lt;object&gt;.</li>
-</ul>
-
-<p>Metadatos y Recursos Externos:</p>
+<p><b>Multimedia:</b></p>
 <ul> 
-<li>&lt;base&gt;: Establece la URL base para los enlaces relativos en el documento.</li>
+    <li>&lt;embed&gt;: Incrustación de contenido externo (por ejemplo, un archivo PDF).</li>
+    <li>&lt;object&gt;: Inserción de contenido multimedia o recursos externos.</li>
+    <li>&lt;param&gt;: Parámetros para elementos &lt;object&gt;.</li>
 </ul>
 
-<p>Etiquetas Obsoletas:</p>
+<p><b>Metadatos y Recursos Externos:</b></p>
+<ul> 
+    <li>&lt;base&gt;: Establece la URL base para los enlaces relativos en el documento.</li>
+</ul>
 
-Algunas etiquetas que pueden encontrarse en sitios web antiguos, pero que están en desuso en HTML5:
+<p><b>Etiquetas Obsoletas:</b></p>
+
+<p class="intro">Algunas etiquetas que pueden encontrarse en sitios web antiguos, pero que están en desuso en HTML5:</p>
 <ul> 
 <li>&lt;center&gt;: Alineación centrada de contenido (reemplazada por CSS).</li>
 <li>&lt;font&gt;: Personalización de fuentes (reemplazada por CSS).</li>
 <li>&lt;acronym&gt;: Para definir acrónimos (reemplazada por &lt;abbr&gt;).</li>
 </ul>
-
-
-
-
-
-
-</div>
-
-
-    
-    
+</div>  
 </main>
 
 <footer>
