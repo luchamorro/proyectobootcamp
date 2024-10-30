@@ -8,16 +8,40 @@
 <!-- <link rel="stylesheet" href="style_box_model.css"> -->
 </head>
 <style>
+    
 .sub {
         background-color: rgb(184, 255, 91);
         padding: 10px 0 10px 0;
         color: white;
     }
 .txt{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    
+
+}
+
+
+.box{
+    width: 60%;
+    margin-left: 25%;
+    margin-left: 25%;
+
+    
 }
 
    /*Alejandro */
+
+   
+.fueraEjemplo1
+{
+    display: flex;
+    justify-content: center;
+}
+
 .ejemplo1 {
 
     background-color: pink;
@@ -52,7 +76,7 @@ display:flex;
 flex-direction: column;
 justify-content: space-between;
 line-height: 3rem;
-margin-left: 3rem;
+margin-left: 20%;
 
 }
 
@@ -63,7 +87,12 @@ display:flex;
 flex-direction: column;
 justify-content: space-between;
 line-height: 1.5rem;
-margin-left: 1.5rem;
+margin-left: 15%;
+}
+
+.content2{
+    background-color: rgb(229, 227, 231);
+    padding-top: 2rem;
 }
 
 
@@ -90,12 +119,23 @@ margin-left: 1.5rem;
 
 <h2 class="sub">CSS Box Model</h2>
 
-<p class="txt">Consiste en una caja que envuelve cada elemento HTML e incluye: content, padding, borders and margins.
-</p>
+<div class="content1"> 
+<div class="txt">
+    <p>Consiste en una caja que envuelve cada elemento HTML e incluye: content, padding, borders and margins.
+    </p>
+</div>
 
-<img src="img/1.png" alt="CSS Box Model" width="40%">
 
+
+<img src="img/1.png" alt="CSS Box Model" class="box">
+
+
+<div class="txt"> 
 <p>Explicación de las diferentes partes: <br>
+</div>  
+
+
+
     <ul class="lista">
 <li>Content: el contenido del cuadro, donde aparecen el texto y las imágenes.</li>
 <li>Padding: borra un área alrededor del contenido. El padding es transparente.</li>
@@ -104,15 +144,23 @@ margin-left: 1.5rem;
     </ul>
 </p>
 
+<div class="txt"> 
+
 <p> El BOX MODEL permite agregar un borde alrededor de los elementos y definir el espacio entre elementos.</p>
 
-<p>Ejemplo:</p>
+</div>
 
+<div class="txt"> 
+<p>Ejemplo:</p>
+</div>
+
+
+<div class="fueraEjemplo1"> 
 <div class="ejemplo1"> 
 
     Este texto es el contenido de la caja. Tiene un padding de 4rem, un margin de 3rem y un borde azul de 2rem. El ancho de la caja es de 30rem y el alto es de 6rem. El color de fondo es rosa.
 </div>
-
+</div>
 
 <div class="codigo"> 
 
@@ -130,17 +178,28 @@ margin-left: 1.5rem;
 </div>
 </div>
 
-<h3>CSS Outline</h3>
+</div>
 
+
+
+<div class="content2"> 
+    <h3>CSS Outline</h3>
+
+<div class="txt"> 
 <p>
     Outline es una línea que se dibuja alrededor de elementos FUERA de los bordes.
     </p>
-
+    </div>
+    <div class="txt"> 
     <p> Ejemplo:</p>
+    </div>
+    
+    <img src="img/2.png" alt="Outline" class="box">
 
-    <img src="img/2.png" alt="Outline" width="50%">
+    <div class="txt"> 
 
     <p>Propiedades:</p>
+    </div>
 
     <ul class="enumeradas">
         <li>outline-style</li>
@@ -149,11 +208,19 @@ margin-left: 1.5rem;
         <li>outline-offset</li>
         <li>outline</li>
     </ul>
-    
+ 
+    <div class="txt"> 
     <p>Outline es diferente a border. A diferencia de border la outline es dibujada fuera del borde del elemento y puede superponerse a otro contenido. Además outline no es parte de las dimensiones del elemento. El height y width del elemento no es afectado por el width del outline.
     </p>
+</div>
+</div>
+   
 
-   <h3>CSS Box Sizing</h3>
+   <div class="content3">  
+
+    <h3>CSS Box Sizing</h3>
+
+   <div class="txt"> 
 
    <p>Esta propiedad permite incluir el padding y el border en el total del width y height de un elemento. </p>
     
@@ -166,7 +233,9 @@ margin-left: 1.5rem;
     
     <p>La propiedad Box Sizing permite agregar el border y el padding al width y height total del elemento</p>
     
+</div>
 
+</div>
     </main>
     <footer>
         <nav>
