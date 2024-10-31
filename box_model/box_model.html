@@ -96,6 +96,39 @@ margin-left: 15%;
 }
 
 
+.divejemplo1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.divejemplo2 {
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid red;
+}
+
+
+.divejemplo3 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+.divejemplo4 {
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+
+
+
+
 
 </style>
 
@@ -111,7 +144,7 @@ margin-left: 15%;
            <li class="menu"><a href="/box_model/box_model.html">CSS Box Model</a></li>
            <li class="menu"><a href="/css_grid/css_grid.html">CSS Grid</a></li>
            <li class="menu"><a href="/etiquetas/etiquetas.html">Etiquetas</a></li>
-           <li class="menu"><a href="/Float/Float.html">Float</a></li>
+           <li class="menu"><a href="/Float/Float.html">CSS Box Sizing</a></li>
            <li class="menu"><a href="/SEO/SEO.html">SEO</a></li>
        </ul>
    </nav>
@@ -232,6 +265,96 @@ margin-left: 15%;
     <p>height + padding + border = alto real de un elemento</p>
     
     <p>La propiedad Box Sizing permite agregar el border y el padding al width y height total del elemento</p>
+
+    <p>El siguiente ejemplo muestra dos elementos &lt;div&gt; con el mismo width y height:</p>
+
+    <div class="divejemplo1">
+        Este div es más pequeño (tiene un width de 3rem y un height de 2rem).
+    </div>
+
+    <span> ----</span>
+    <div class="divejemplo2">
+        Este div es más grande (aunque también tiene un width de 3rem y un height de 2rem).
+    </div>
+
+<p>Código:</p>
+
+<p class="codigo">
+
+    .div1 {<br>
+        width: 300px;<br>
+        height: 100px;<br>
+        border: 1px solid blue;<br>
+      }<br>
+      
+      .div2 {<br>
+        width: 300px;<br>
+        height: 100px;<br>
+        padding: 50px;<br>
+        border: 1px solid red;<br>
+      }<br>
+      
+
+</p>
+
+
+<p>La propiedad box-sizing resuelve este problema.</p>
+
+    <p>Ejemplo:</p>
+    
+    <p> Si ponemos <i>box-sizing: border-box;</i> en un elemento,  el padding y el border son incluidos en el width y en el height totales:</p>
+
+    <div class="divejemplo3">Ahora los dos divs son del mismo tamaño!</div>
+    <span>----</span>
+    <div class="divejemplo4">Yeeeei!</div>
+    <br>
+<p>Código:</p>
+
+
+
+
+
+<p class="codigo">
+    .div1 { <br>
+    width: 3rem; <br>
+    height: 3rem; <br>
+    border: 1px solid blue; <br>
+    box-sizing: border-box; <br>
+  }<br>
+  
+  .div2 {<br>
+    width: 300px;<br>
+    height: 100px;<br>
+    padding: 50px;<br>
+    border: 1px solid red;<br>
+    box-sizing: border-box;<br>
+  }
+  </p>
+
+  <p> Se recomienda aplicar esta propiedad a todos los elementos de una web:</p>
+
+
+  <p class="codigo">
+    * {<br>
+        box-sizing: border-box;<br>
+      }<br>
+  </p>
+
+<p> Valores que podemos aplicar al box-sizing:</p>
+
+<p><b>content-box</b> - Valor por defecto. El width y el height incluye solo el contenido. Border y padding no están incluidos.</p>
+<p><b>border-box</b> -  Las propiedades width y height incluyen al contenido, el padding y el border.</p>
+<p><b>initial</b> - Mantiene su valor por defecto. </p>
+<p><b>inherit</b> - Hereda la propiedad del elemento parent.</p>
+
+ 
+
+
+  
+
+
+    
+
     
 </div>
 

@@ -62,7 +62,47 @@
             width: 30rem;
             display: flex;
         }
+        .boxzi{
+            background-color: rgb(157, 218, 197);
+            margin-bottom: 0;
+            padding: 10px 0 10px 0;
+        }
+        .div1{
+            width: 200px;
+            height: 150px;
+            border: 1px solid blue;
+            margin: 1rem auto;
+        }
 
+        .div2 {
+            width: 200px;
+            height: 150px;
+            padding: 50px;
+            border: 1px solid red; 
+            margin: 1rem auto;  
+        }
+        .div3 {
+            width: 200px;
+            height: 150px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+            margin: 1rem auto;  
+        }
+
+        .div4 {
+            width: 200px;
+            height: 150px;
+            padding: 50px;
+            border: 1px solid red;
+            box-sizing: border-box;
+            margin: 1rem auto;
+            position: relative;
+        }
+        .div4 p{
+            position: absolute;
+            left: 0;
+            margin: 0;
+        }
         
 
     </style>
@@ -78,12 +118,58 @@
         <li class="menu"><a href="/box_model/box_model.html">CSS Box Model</a></li>
         <li class="menu"><a href="/css_grid/css_grid.html">CSS Grid</a></li>
         <li class="menu"><a href="/etiquetas/etiquetas.html">Etiquetas</a></li>
-        <li class="menu"><a href="/Float/Float.html">Float</a></li>
+        <li class="menu"><a href="/Float/Float.html">CSS Box Sizing</a></li>
         <li class="menu"><a href="/SEO/SEO.html">SEO</a></li>
     </ul>
 </nav>
 <main>
     <h2 class="sub">Los Elementos Flotantes</h2>
+   <!--  <div class="boxzi">
+        <h3>Box-Sizing</h3>
+        <p class="etiq">Es uno de los primeros métodos de posicionamiento de elementos en HTML5 que auna los tres elementos que dimensionales.</p>
+        <ul>
+            <li>width + padding + border</li>
+            <li>height + padding + border</li>
+        </ul>
+        <p class="sint">Su sintaxis es sencilla, va en la parte de CSS, tanto en el archivo Style, como dentro de la etiqueta.</p>
+        <p class="sint">Sería tal que así:</p>
+        <p class="aaa">Aaaaa{ box-sizing: border-box; }</p>
+                <p class="etiq">Un elemento sin box-sizing se vería alterado al modificar cualquier componente dimensional.</p>
+                <div class="div1">
+                    <p>.div1 { </p>
+                        <p>width: 300px; </p>
+                        <p>height: 100px; </p>
+                        <p>padding: 50px; </p>
+                        <p>border: 1px solid red;</p>
+                        <p>margin: 1rem auto;}</p>
+                </div>
+                <div class="div2">
+                    <p>.div2 { </p>
+                        <p>width: 300px; </p>
+                        <p>height: 100px; </p>
+                        <p>padding: 50px; </p>
+                        <p>border: 1px solid red;</p>
+                        <p>margin: 1rem auto;}</p>
+                </div>
+                <p class="etiq">Un elemento con box-sizing conservaría su tamaño, pese a las modificaciones.</p>
+                <div class="div3">
+                    <p>.div1 { </p>
+                        <p>width: 300px; </p>
+                        <p>height: 100px; </p>
+                        <p>padding: 50px; </p>
+                        <p>border: 1px solid red;</p>
+                        <p>margin: 1rem auto;}</p>
+                </div>
+                <div class="div4">
+                    <p style="top: 0;">.div1 { </p>
+                    <p style="top: 20px;">width: 300px; </p>
+                    <p style="top: 40px;">height: 100px; </p>
+                    <p style="top: 60px;">padding: 50px; </p>
+                    <p style="top: 80px;">border: 1px solid red;</p>
+                    <p style="top: 100px;">margin: 1rem auto;}</p>
+                </div>
+                
+            </div>-->
     <div class="float">
         <h3>Float</h3>
         <p class="etiq">Es una etiqueta de CSS que permite ubicar y mover un elemento en torno a un texto. Interviene en el flujo normal del texto y se integra en él según el valor que se le dé. Este elemento se llama elemento flotante y dependiendo del valor otorgado modifica el display.</p>
